@@ -34,6 +34,7 @@ Not deployed yet. A public deployment URL and GitHub repository URL are still pe
 ## AI-assisted visual review
 
 - AI image inspection was used to compare the supplied desktop and mobile screenshots with local browser renders. It informed breakpoint layout, text ordering, visible logo bounds, and carousel behavior; it did not generate or replace any brand artwork.
+- This README was rewritten and AI-guided against the assessment requirements, including setup, stack, responsive behavior, accessibility, design decisions, known issues, and validation.
 
 ## Known issues
 
