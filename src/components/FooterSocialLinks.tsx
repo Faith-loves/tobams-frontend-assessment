@@ -6,9 +6,9 @@ const icons = [
 
 export default function FooterSocialLinks() {
   return (
-    <div className="flex h-[40px] w-full min-w-0 rotate-0 gap-[20px] opacity-100">
+    <div className="flex h-[40px] w-full gap-[20px]">
       {icons.map(({ name, path }) => (
-        <button key={name} type="button" aria-label={name} className="flex h-[40px] w-[40px] rotate-0 items-center justify-center gap-[10px] rounded-[50px] bg-[var(--Hue-White,#FFFFFF)] p-[10px] opacity-100">
+        <button key={name} type="button" aria-label={name} className="flex h-[40px] w-[40px] items-center justify-center gap-[10px] rounded-[50px] bg-[var(--Hue-White,#FFFFFF)] p-[10px]">
           <svg aria-hidden="true" viewBox="0 0 24 24" className="h-[20px] w-[20px]" fill="currentColor"><path d={path} /></svg>
         </button>
       ))}

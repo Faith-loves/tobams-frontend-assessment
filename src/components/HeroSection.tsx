@@ -16,8 +16,8 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-[#000000B2]" />
 
       <div className="relative z-10 mx-auto flex min-h-[317px] md:min-h-[511px] w-full max-w-[1440px] items-center justify-center px-[24px] md:px-[32px] lg:px-[64px] py-[40px] md:py-[64px] lg:py-[112px]">
-        <div className="flex h-auto w-full min-w-0 flex-col items-center gap-[40px]">
-          <div className="flex h-auto w-full min-w-0 flex-col items-center gap-[12px]">
+        <div className="flex w-full flex-col items-center gap-[40px]">
+          <div className="flex w-full flex-col items-center gap-[12px]">
             <div className="flex h-[38px] w-[150px] md:h-[45px] md:w-[193px] shrink-0 items-center justify-center rounded-[100px] bg-[#FFFFFF1A]">
               <span className="whitespace-normal text-center text-[12px] md:text-[14px] font-normal leading-[21px] tracking-[0] text-white">
                 WHAT WE DO

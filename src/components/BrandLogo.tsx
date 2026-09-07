@@ -9,7 +9,7 @@ export default function BrandLogo({ footer = false }: { footer?: boolean }) {
         width={900}
         height={600}
         priority={!footer}
-        className="absolute left-[-6.675063%] top-[-88.77551%] h-auto w-[113.350126%] max-w-none"
+        className="absolute left-[-6.675063%] top-[-88.77551%] w-[113.350126%] max-w-none"
       />
     </span>
   );

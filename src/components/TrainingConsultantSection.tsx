@@ -1,109 +1,48 @@
-import type { ReactNode } from "react";
 import { Nunito } from "next/font/google";
 
-const nunito = Nunito({
-  subsets: ["latin"],
-  weight: "600",
-});
+const nunito = Nunito({ subsets: ["latin"], weight: "600" });
 
-type TrainingConsultantSectionProps = {
-  children?: ReactNode;
-};
+const benefits = [
+  ["Expert-Led Learning", "Gain insight from seasoned professionals in the field as they mentor you through the subtleties of business analysis."],
+  ["Comprehensive Curriculum", "Access a robust curriculum that covers fundamental principles and advanced methodologies, ensuring a well-rounded understanding."],
+  ["Interactive Workshops", "Engage in hands-on workshops designed to enhance your training capabilities and provide practical insights."],
+  ["Global Recognition", "You will attain a globally recognized certification, opening doors to new career opportunities and industry recognition."],
+] as const;
 
-export default function TrainingConsultantSection({
-  children,
-}: TrainingConsultantSectionProps) {
+export default function TrainingConsultantSection() {
   return (
-    <section
-      aria-label="Training the Consultant"
-      className="mx-auto flex w-full max-w-[1440px] flex-col gap-[10px] py-[24px] md:py-[40px] opacity-100"
-    >
-      <div className="h-auto w-full min-w-0 rotate-0 gap-[10px] bg-[#5712441A] px-[24px] md:px-[32px] lg:px-[64px] py-[24px] md:py-[48px] opacity-100">
-        <div className="flex h-auto w-full min-w-0 rotate-0 flex-col gap-[32px] opacity-100">
-          <div className="flex h-auto w-full min-w-0 rotate-0 flex-col gap-[24px] md:gap-[20px] opacity-100">
-            <div className="flex h-auto w-full min-w-0 rotate-0 flex-col gap-[16px] md:gap-[12px] opacity-100">
-              <h2
-                className={`${nunito.className} h-auto w-full min-w-0 rotate-0 text-[24px] md:text-[36px] lg:text-[40px] font-semibold leading-[130%] tracking-[0] text-[var(--Hue-Primary,#571244)] opacity-100`}
-              >
+    <section aria-label="Training the Consultant" className="mx-auto w-full max-w-[1440px] py-[24px] md:py-[40px]">
+      <div className="bg-[#5712441A] px-[24px] py-[24px] md:px-[32px] md:py-[48px] lg:px-[64px]">
+        <div className="flex flex-col gap-[32px]">
+          <div className="flex flex-col gap-[24px] md:gap-[20px]">
+            <div className="flex flex-col gap-[16px] md:gap-[12px]">
+              <h2 className={`${nunito.className} text-[24px] font-semibold leading-[130%] text-[var(--Hue-Primary,#571244)] md:text-[36px] lg:text-[40px]`}>
                 Training The Consultant
               </h2>
-              <p className="h-auto w-full min-w-0 rotate-0 text-[16px] md:text-[18px] font-semibold leading-[150%] tracking-[0] text-[var(--Hue-Primary,#571244)] opacity-100">
+              <p className="text-[16px] font-semibold leading-[150%] text-[var(--Hue-Primary,#571244)] md:text-[18px]">
                 Maximise Your Potential as a Certified Trainer:
               </p>
             </div>
-            <div className="flex h-auto w-full min-w-0 rotate-0 flex-col gap-[16px] md:gap-[12px] opacity-100">
-              <p className="h-auto w-full min-w-0 rotate-0 text-[14px] md:text-[18px] font-normal leading-[150%] tracking-[0] text-[var(--Hue-Main-Text,#151515)] opacity-100">
-                <span className="md:hidden">With the help of our Business Analysis Training Consultants program, take a revolutionary step toward becoming a distinguished certified trainer. Learn from professionals in the field, immerse yourself in a thorough curriculum, and hone your training methods through interactive workshops. Participating in our program will enable you to gain expertise in Business Analysis while also developing the abilities to mentor and encourage others in their career advancement.</span>
-                <span className="hidden md:inline">With the help of our Training Consultants program, take a revolutionary step toward becoming a distinguished certified training consultant. Learn from professionals in the field, immerse yourself in a thorough curriculum, and hone your training methods through interactive workshops. Participating in our program will enable you to gain expertise in diverse courses while also developing the abilities to mentor and encourage others in their career advancement.</span>
-              </p>
-            </div>
-            <div className="grid h-auto w-full min-w-0 grid-cols-1 md:grid-cols-2 rotate-0 gap-[24px] md:gap-[20px] rounded-[8px] bg-[var(--Hue-Primary,#571244)] p-[24px] opacity-100">
-              <div className="flex h-auto w-full min-w-0 rotate-0 flex-col gap-[24px] md:gap-[20px] opacity-100">
-                <div className="flex h-auto w-full min-w-0 rotate-0 flex-col gap-[16px] md:gap-[12px] opacity-100">
-                  <h3 className="h-[27px] w-[184px] rotate-0 text-[16px] md:text-[18px] font-semibold md:font-bold leading-[150%] tracking-[0] text-[#FFFFFF] opacity-100">
-                    Expert-Led Learning
-                  </h3>
-                  <p className="h-auto w-full min-w-0 rotate-0 text-[14px] md:text-[18px] font-normal leading-[150%] tracking-[0] text-[var(--Hue-White,#FFFFFF)] opacity-100">
-                    Gain insight from seasoned professionals in the field as they
-                    mentor you through the subtleties of business analysis.
-                  </p>
-                </div>
-                <div className="flex h-auto w-full min-w-0 rotate-0 flex-col gap-[16px] md:gap-[12px] opacity-100">
-                  <h3 className="h-auto w-full min-w-0 rotate-0 text-[16px] md:text-[18px] font-semibold md:font-bold leading-[150%] tracking-[0] text-[var(--Hue-White,#FFFFFF)] opacity-100">
-                    Comprehensive Curriculum
-                  </h3>
-                  <p className="h-auto w-full min-w-0 rotate-0 text-[14px] md:text-[18px] font-normal leading-[150%] tracking-[0] text-[var(--Hue-White,#FFFFFF)] opacity-100">
-                    Access a robust curriculum that covers fundamental principles and
-                    advanced methodologies, ensuring a well-rounded understanding.
-                  </p>
-                </div>
-              </div>
-              <div className="flex h-auto w-full min-w-0 rotate-0 flex-col gap-[24px] md:gap-[20px] opacity-100">
-                <div className="flex h-auto w-full min-w-0 rotate-0 flex-col gap-[16px] md:gap-[12px] opacity-100">
-                  <div className="flex h-[27px] w-[207px] rotate-0 gap-[16px] opacity-100">
-                    <h3 className="h-[27px] w-[207px] rotate-0 text-[16px] md:text-[18px] font-semibold md:font-bold leading-[150%] tracking-[0] text-[var(--Hue-White,#FFFFFF)] opacity-100">
-                      Interactive Workshops
-                    </h3>
-                  </div>
-                  <p className="h-auto w-full min-w-0 rotate-0 text-[14px] md:text-[18px] font-normal leading-[150%] tracking-[0] text-[var(--Hue-White,#FFFFFF)] opacity-100">
-                    Engage in hands-on workshops designed to enhance your training
-                    capabilities and provide practical insights.
-                  </p>
-                </div>
-                <div className="flex h-auto w-full min-w-0 rotate-0 flex-col gap-[16px] md:gap-[12px] opacity-100">
-                  <div className="flex h-[27px] w-[174px] rotate-0 gap-[16px] opacity-100">
-                    <h3 className="h-[27px] w-[174px] rotate-0 text-[16px] md:text-[18px] font-semibold md:font-bold leading-[150%] tracking-[0] text-[var(--Hue-White,#FFFFFF)] opacity-100">
-                      Global Recognition
-                    </h3>
-                  </div>
-                  <p className="h-auto w-full min-w-0 rotate-0 text-[14px] md:text-[18px] font-normal leading-[150%] tracking-[0] text-[var(--Hue-White,#FFFFFF)] opacity-100">
-                    You will attain a globally recognized certification, opening
-                    doors to new career opportunities and industry recognition.
-                  </p>
-                </div>
-              </div>
+            <p className="text-[14px] leading-[150%] text-[var(--Hue-Main-Text,#151515)] md:text-[18px]">
+              <span className="md:hidden">With the help of our Business Analysis Training Consultants program, take a revolutionary step toward becoming a distinguished certified trainer. Learn from professionals in the field, immerse yourself in a thorough curriculum, and hone your training methods through interactive workshops. Participating in our program will enable you to gain expertise in Business Analysis while also developing the abilities to mentor and encourage others in their career advancement.</span>
+              <span className="hidden md:inline">With the help of our Training Consultants program, take a revolutionary step toward becoming a distinguished certified training consultant. Learn from professionals in the field, immerse yourself in a thorough curriculum, and hone your training methods through interactive workshops. Participating in our program will enable you to gain expertise in diverse courses while also developing the abilities to mentor and encourage others in their career advancement.</span>
+            </p>
+            <div className="grid grid-cols-1 gap-[24px] rounded-[8px] bg-[var(--Hue-Primary,#571244)] p-[24px] md:grid-cols-2 md:gap-x-[20px] md:gap-y-[20px]">
+              {benefits.map(([title, text]) => (
+                <article key={title} className="flex flex-col gap-[16px] md:gap-[12px]">
+                  <h3 className="text-[16px] font-semibold leading-[150%] text-white md:text-[18px] md:font-bold">{title}</h3>
+                  <p className="text-[14px] leading-[150%] text-white md:text-[18px]">{text}</p>
+                </article>
+              ))}
             </div>
           </div>
-          <button
-            type="button"
-            className="flex h-[48px] w-[173px] rotate-0 items-center justify-center gap-[8px] rounded-[4px] bg-[var(--Hue-Primary,#571244)] px-[24px] py-[10.5px] opacity-100"
-          >
-            <span className="h-[27px] w-[93px] rotate-0 text-[14px] md:text-[18px] font-semibold leading-[150%] tracking-[0] text-[var(--Hue-White,#FFFFFF)] opacity-100">
-              Learn More
-            </span>
-            <svg
-              aria-hidden="true"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              className="h-[24px] w-[24px] rotate-0 text-[var(--Hue-White,#FFFFFF)] opacity-100"
-            >
+          <button type="button" className="flex h-[48px] w-[173px] items-center justify-center gap-[8px] rounded-[4px] bg-[var(--Hue-Primary,#571244)] px-[24px] py-[10.5px]">
+            <span className="text-[14px] font-semibold leading-[150%] text-white md:text-[18px]">Learn More</span>
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-[24px] w-[24px] text-white">
               <path d="M7 17 17 7M7 7h10v10" />
             </svg>
           </button>
         </div>
-        {children}
       </div>
     </section>
   );

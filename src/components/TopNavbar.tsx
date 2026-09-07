@@ -8,12 +8,12 @@ export default function TopNavbar() {
       <div className="mx-auto flex h-[76px] md:h-[104px] gap-[16px] w-full max-w-[1440px] items-center justify-between px-[24px] md:px-[32px] lg:px-[64px] py-[20px]">
         <BrandLogo />
 
-        <div className="hidden h-[48px] w-[374px] rotate-0 items-center gap-[24px] opacity-100 md:flex">
+        <div className="hidden h-[48px] w-[374px] items-center gap-[24px] md:flex">
           <button
             type="button"
-            className="flex h-[48px] w-[167px] rotate-0 items-center justify-center gap-[8px] rounded-[4px] bg-[var(--Hue-Primary,#571244)] px-[16px] py-[8px] text-[18px] font-semibold leading-[150%] tracking-[0] text-[var(--Hue-White,#FFFFFF)] opacity-100 inset-ring-[1px] inset-ring-[var(--Hue-Primary,#571244)]"
+            className="flex h-[48px] w-[167px] items-center justify-center gap-[8px] rounded-[4px] bg-[var(--Hue-Primary,#571244)] px-[16px] py-[8px] text-[18px] font-semibold leading-[150%] tracking-[0] text-[var(--Hue-White,#FFFFFF)] inset-ring-[1px] inset-ring-[var(--Hue-Primary,#571244)]"
           >
-            <span className="flex h-[32px] w-[32px] shrink-0 rotate-0 items-center justify-center gap-[2.67px] rounded-[16px] bg-[var(--shades-purple-selection-purple-10,#DDD0DA)] opacity-100">
+            <span className="flex h-[32px] w-[32px] shrink-0 items-center justify-center gap-[2.67px] rounded-[16px] bg-[var(--shades-purple-selection-purple-10,#DDD0DA)]">
               <CircleUserRound
                 size={24}
                 strokeWidth={1.5}
@@ -22,9 +22,9 @@ export default function TopNavbar() {
               />
             </span>
 
-            <span className="h-[27px] w-[67px] shrink-0 rotate-0 text-center align-middle opacity-100">Account</span>
+            <span className="h-[27px] w-[67px] shrink-0 text-center align-middle">Account</span>
 
-            <span className="relative h-[20px] w-[20px] shrink-0 opacity-100">
+            <span className="relative h-[20px] w-[20px] shrink-0">
               <svg
                 aria-hidden="true"
                 viewBox="0 0 20 20"
@@ -40,10 +40,10 @@ export default function TopNavbar() {
 
           <button
             type="button"
-            className="flex h-[48px] w-[183px] rotate-0 items-center justify-center gap-[10px] rounded-[4px] bg-[var(--Hue-Secondary,#EF4353)] px-[20px] py-[10.5px] text-[18px] font-semibold leading-[150%] tracking-[0] text-[var(--Hue-White,#FFFFFF)] opacity-100"
+            className="flex h-[48px] w-[183px] items-center justify-center gap-[10px] rounded-[4px] bg-[var(--Hue-Secondary,#EF4353)] px-[20px] py-[10.5px] text-[18px] font-semibold leading-[150%] tracking-[0] text-[var(--Hue-White,#FFFFFF)]"
           >
             <span className="flex h-[27px] w-[143px] gap-[8px]">
-              <span className="h-[27px] w-[143px] rotate-0 text-center opacity-100">Take Assessment</span>
+              <span className="h-[27px] w-[143px] text-center">Take Assessment</span>
             </span>
           </button>
         </div>

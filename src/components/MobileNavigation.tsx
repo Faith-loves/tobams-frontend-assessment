@@ -3,15 +3,16 @@ import SecondaryNavbar from "./SecondaryNavbar";
 
 export default function MobileNavigation() {
   return (
-    <details className="group md:hidden">
-      <summary aria-label="Open navigation menu" className="flex h-[28px] w-[28px] cursor-pointer list-none items-center justify-center rounded-[8px] bg-[#151515] text-white [&::-webkit-details-marker]:hidden">
+    <details className="group relative md:hidden">
+      <summary aria-label="Open navigation menu" className="relative z-[60] flex h-[28px] w-[28px] cursor-pointer list-none items-center justify-center rounded-[8px] bg-[#151515] text-white [&::-webkit-details-marker]:hidden">
         <Menu aria-hidden="true" size={24} />
       </summary>
-      <div className="absolute inset-x-[24px] top-[68px] z-50 rounded-[8px] border border-[#DDD0DA] bg-white p-[16px] shadow-lg">
+      <div aria-hidden="true" className="fixed inset-0 z-40 hidden bg-[#11040E]/35 backdrop-blur-[6px] group-open:block" />
+      <div className="fixed inset-x-[24px] top-[76px] z-50 max-h-[calc(100vh-100px)] overflow-y-auto rounded-[8px] border border-[#DDD0DA] bg-white p-[16px] shadow-xl">
         <SecondaryNavbar mobile />
-        <div className="mt-[16px] flex flex-wrap gap-[12px]">
-          <button type="button" className="rounded-[4px] bg-[#571244] px-[16px] py-[10px] text-[14px] text-white">Account</button>
-          <button type="button" className="rounded-[4px] bg-[#EF4353] px-[16px] py-[10px] text-[14px] text-white">Take Assessment</button>
+        <div className="mt-[20px] grid grid-cols-2 gap-[16px] border-t border-[#DDD0DA] pt-[16px]">
+          <button type="button" className="h-[40px] rounded-[4px] bg-[#571244] px-[12px] text-[14px] font-semibold text-white">Account</button>
+          <button type="button" className="h-[40px] rounded-[4px] bg-[#EF4353] px-[12px] text-[14px] font-semibold text-white">Take Assessment</button>
         </div>
       </div>
     </details>

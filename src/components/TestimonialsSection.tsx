@@ -69,7 +69,6 @@ export default function TestimonialsSection() {
     const row = cardsRef.current;
     if (!row) return;
     const observer = new ResizeObserver(() => {
-      // Keep a complete card aligned when switching between viewport sizes.
       row.scrollTo({ left: 0, behavior: "instant" });
       updateControls();
     });
@@ -88,13 +87,13 @@ export default function TestimonialsSection() {
   return (
     <section
       aria-labelledby="testimonials-heading"
-      className="relative mx-auto flex w-full max-w-[1440px] rotate-0 flex-col gap-[10px] py-[40px] lg:py-[64px] opacity-100 after:absolute after:inset-x-0 after:bottom-[-0.5px] after:border-b after:border-[#C4C4C44D] after:content-['']"
+      className="relative mx-auto flex w-full max-w-[1440px] flex-col gap-[10px] py-[40px] lg:py-[64px] after:absolute after:inset-x-0 after:bottom-[-0.5px] after:border-b after:border-[#C4C4C44D] after:content-['']"
     >
-      <div className="flex w-full min-w-0 rotate-0 flex-col gap-[40px] px-[24px] md:px-[32px] lg:px-[64px] opacity-100">
-        <div className="flex w-full min-w-0 rotate-0 flex-col gap-[32px] md:gap-[41px] opacity-100">
+      <div className="flex w-full flex-col gap-[40px] px-[24px] md:px-[32px] lg:px-[64px]">
+        <div className="flex w-full flex-col gap-[32px] md:gap-[41px]">
           <h2
             id="testimonials-heading"
-            className={`${nunito.className} rotate-0 self-center text-[20px] md:text-[36px] lg:text-[40px] font-bold leading-[130%] tracking-[0] text-[var(--Hue-Main-Text,#151515)] opacity-100`}
+            className={`${nunito.className} self-center text-[20px] md:text-[36px] lg:text-[40px] font-bold leading-[130%] tracking-[0] text-[var(--Hue-Main-Text,#151515)]`}
           >
             Testimonials
           </h2>
@@ -105,14 +104,14 @@ export default function TestimonialsSection() {
             role="region"
             aria-label="Client testimonials"
             aria-live="polite"
-            className="flex w-full min-w-0 items-stretch gap-[23px] rotate-0 overflow-hidden opacity-100"
+            className="flex w-full items-stretch gap-[23px] overflow-hidden"
           >
               {testimonials.map((testimonial) => (
                 <TestimonialCard key={testimonial.name} {...testimonial} />
               ))}
           </div>
         </div>
-        <div className="flex h-[32px] w-full rotate-0 justify-end gap-[12px] opacity-100">
+        <div className="flex h-[32px] w-full justify-end gap-[12px]">
           <TestimonialArrowButton
             direction="left"
             disabled={atStart}
