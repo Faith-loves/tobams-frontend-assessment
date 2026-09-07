@@ -20,6 +20,10 @@ npx tsc --noEmit --incremental false
 
 [https://tobams-frontend-assessment-sigma.vercel.app/](https://tobams-frontend-assessment-sigma.vercel.app/)
 
+## GitHub Repository
+
+[https://github.com/Faith-loves/tobams-frontend-assessment](https://github.com/Faith-loves/tobams-frontend-assessment)
+
 ## Design decisions and responsive behavior
 
 - Figma design: [Frontend Intern Assessment](https://www.figma.com/design/wuqCLkK1feTgB6xxSRRwZu/Frontend-Intern-Assessment?node-id=0-1&p=f&t=qxnAKp4Ael8QtLYz-0)
@@ -38,7 +42,6 @@ npx tsc --noEmit --incremental false
 
 ## Known issues
 
-- The public GitHub repository URL is not listed here yet.
 - `npm run build`, `npm run lint`, and `npx tsc --noEmit --incremental false` pass.
 
 ## Verification
