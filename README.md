@@ -18,7 +18,7 @@ npx tsc --noEmit --incremental false
 
 ## Live URL
 
-Not deployed yet. A public deployment URL and GitHub repository URL are still pending.
+[https://tobams-frontend-assessment-sigma.vercel.app/](https://tobams-frontend-assessment-sigma.vercel.app/)
 
 ## Design decisions and responsive behavior
 
@@ -38,7 +38,7 @@ Not deployed yet. A public deployment URL and GitHub repository URL are still pe
 
 ## Known issues
 
-- The repository has not been deployed or pushed to a public GitHub repository yet, so the live URL and repository URL remain pending.
+- The public GitHub repository URL is not listed here yet.
 - `npm run build`, `npm run lint`, and `npx tsc --noEmit --incremental false` pass.
 
 ## Verification
